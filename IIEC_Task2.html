@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Archishman's Home</title>
+    </head>
+
+    <body style="background-color: dodgerblue;">
+        <header>
+            <h1 style="color: orange; text-align: center;">WELCOME</h1>
+        </header>
+
+        <section style="background-color:sandybrown; text-align: center;">
+            <p style="color: midnightblue;">
+                There are two sections here.<br>
+                One is for running any command on Red Had 8 OS.<br>
+                And the other is for Docker Operations.
+            </p>
+        </section><br>
+
+        <section style="background-color:sandybrown; text-align: center; color: midnightblue;">
+            <details open>
+                <summary><h2>RHEL8 OS Commands</h2></summary>
+                <form action="http://192.168.1.7/cgi-bin/menu-based-os.py">
+                    Enter the task you want to perform : <input type="text" name="i"/>
+                    <br><br>
+                    <input type="submit"/><br>
+                </form>
+            </details>
+        </section>
+
+        <h3 style="color:sandybrown; text-align: center;">--OR--</h3>
+
+        <section style="background-color:sandybrown; text-align: center; color: midnightblue;">
+            <details open>
+                <summary><h2>Docker Operations</h2></summary>
+                <form action="http://192.168.1.7/cgi-bin/docker-operation.py">
+                    Which operation do you want to perform? 
+                    <select name="z">
+                        <option>Available_images</option>
+                        <option>Launch_container</option>
+                        <option>Stop_container</option>
+                        <option>Run_prelaunched_containers</option>
+                        <option>Currently_running_containers</option>
+                    </select>
+                    <br><br>
+                    Enter OS name : <input type="text" name="x"/>
+                    <br><br>
+                    Enter the container image form available images (only to launch) :
+                    <input type="text" name="y"/>
+                    <br><br>
+                    <input type="submit"/><br>
+                </form>
+            </details>
+        </section>
+
+    </body>
+</html>
